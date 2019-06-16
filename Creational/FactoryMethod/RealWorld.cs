@@ -95,7 +95,7 @@ namespace FactoryMethod
     /// </summary>
     abstract class Document
     {
-        private List<Page> _pages = new List<Page>();
+        private readonly List<Page> _pages = new List<Page>();
         // Constructor calls abstract Factory method
 
         public Document()
@@ -109,7 +109,6 @@ namespace FactoryMethod
         }
 
         // Factory Method
-
         public abstract void CreatePages();
     }
 
