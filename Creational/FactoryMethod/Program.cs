@@ -2,7 +2,7 @@
 
 namespace FactoryMethod
 {
-    class Program
+    public class Program
     {
         // Define an interface for creating an object, but let subclasses decide which class to instantiate. 
         // Factory Method lets a class defer instantiation to subclasses.
@@ -13,6 +13,9 @@ namespace FactoryMethod
             Console.WriteLine("Implement in real world");
             var realWord = new RealWorld();
             realWord.Run();
+
+            // Wait for user input
+            Console.ReadKey();
         }
     }
 }

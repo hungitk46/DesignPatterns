@@ -9,13 +9,11 @@ namespace AbstractFactory
         public void Run()
         {
             // Create and run the African animal world
-
             ContinentFactory africa = new AfricaFactory();
             AnimalWorld world = new AnimalWorld(africa);
             world.RunFoodChain();
 
             // Create and run the American animal world
-
             ContinentFactory america = new AmericaFactory();
             world = new AnimalWorld(america);
             world.RunFoodChain();
@@ -35,7 +33,6 @@ namespace AbstractFactory
     /// The 'ConcreteFactory1' class
     /// Châu Phi
     /// </summary>
-
     class AfricaFactory : ContinentFactory
     {
         public override Herbivore CreateHerbivore()
