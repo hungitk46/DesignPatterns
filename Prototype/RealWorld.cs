@@ -29,7 +29,6 @@ namespace Prototype
     /// <summary>
     /// The 'Prototype' abstract class
     /// </summary>
-
     abstract class ColorPrototype
     {
         public abstract ColorPrototype Clone();
@@ -38,9 +37,7 @@ namespace Prototype
     /// <summary>
     /// The 'ConcretePrototype' class
     /// </summary>
-
     class Color : ColorPrototype
-
     {
         private readonly int _red;
         private readonly int _green;
@@ -53,7 +50,6 @@ namespace Prototype
             this._green = green;
             this._blue = blue;
         }
-
         // Create a shallow copy
         public override ColorPrototype Clone()
         {
